@@ -1,0 +1,17 @@
+id: bc990ca3-0bf0-483e-8733-6d3f666fc1c1
+timestamp: 2023-11-16T18:55:23Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: python-function
+  source:
+    image: us-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:8c1dddd43e46d785e585612d99704d226c4afca840761f95ff019215f0381230
+fragments:
+  - name: tap-workload
+    source:
+      image: us-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  functionName: main
+  includeTap: true
+  interfaceType: http
+  projectName: python-function
